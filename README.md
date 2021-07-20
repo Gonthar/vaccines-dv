@@ -8,6 +8,10 @@ Project uses poetry as dependency manager, command to run is:
 poetry run vaccines
 ```
 
+## Data sources
+Polish counties shapefile comes from [gis support](https://gis-support.pl/baza-wiedzy-2/dane-do-pobrania/granice-administracyjne/)
+Vaccination data comes from the government (https://www.gov.pl/api/data/covid-vaccination-contest)
+
 ## Planned tasks
 - [x] Data gathering
 - [x] Basic map plotting
