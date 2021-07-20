@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "vaccines-dv"
+version = "0.1.0"
+description = ""
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/<Gonthar/vaccines-dv"
+repository = "https://github.com/Gonthar/vaccines-dv"
+keywords = ["vaccine", "vaccines", "COVID-19", "coronavirus", "vaccination-data", "Poland"]
+authors = ["Maciej Gontar <maciej.gontar@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pyproj = "^3.1.0"
+numpy = "^1.21.0"
+matplotlib = "^3.4.2"
+pandas = "^1.3.0"
+geos = "^0.2.3"
+geopandas = "^0.9.0"
+requests = "^2.26.0"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+vaccines = "vaccines_dv.console:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
