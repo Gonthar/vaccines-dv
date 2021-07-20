@@ -10,6 +10,7 @@ poetry run vaccines
 
 ## Data sources
 Polish counties shapefile comes from [gis support](https://gis-support.pl/baza-wiedzy-2/dane-do-pobrania/granice-administracyjne/)
+
 Vaccination data comes from the government (https://www.gov.pl/api/data/covid-vaccination-contest)
 
 ## Planned tasks
