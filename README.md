@@ -1,6 +1,8 @@
 # Vaccines: data visualisation
 Small project visualising current COVID-19 vaccination rate in Poland.
 
+![map](./img/map.png)
+
 ## Installation
 Project uses poetry as dependency manager, command to run is:
 

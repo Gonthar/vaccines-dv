@@ -6,6 +6,8 @@ import geopandas
 import numpy
 import matplotlib.pyplot as pyplot
 from matplotlib.colors import TwoSlopeNorm
+from shapely.geometry import Point
+from shapely.geometry import Polygon
 
 def main():
     # data input
@@ -32,4 +34,12 @@ def main():
     counties_with_vaccine_data.plot(column='full_vaccinated_percent', cmap='RdYlGn', norm=norm, figsize=(10, 8), edgecolor='black', linewidth=0.1)
     pyplot.axis('off')
 
+    # city names
+    for city in counties_with_vaccine_data.itertuples(index=True, name='city'):
+        if cityNameShouldBeDisplayed(city.JPT_NAZWA_, city.population):
+            pyplot.text(city.geometry.centroid.x, city.geometry.centroid.y, city.JPT_NAZWA_, fontsize=7)
+
     pyplot.show()
+
+def cityNameShouldBeDisplayed(name, population):
+    return population > 75000 and name not in ['Bytom', 'Sosnowiec', 'Zabrze', 'Jaworzno', 'Tychy', 'Ruda Śląska', 'Chorzów']
