@@ -18,7 +18,7 @@ Vaccination data comes from the government (https://www.gov.pl/api/data/covid-va
 ## Planned tasks
 - [x] Data gathering
 - [x] Basic map plotting
-- [ ] Display names of larger cities for better map orientation
+- [x] Display names of larger cities for better map orientation
 - [ ] Fix missing 10 municipalities data [more info](https://www.gov.pl/web/premier/10-nowych-miast-na-mapie-polski-premier-m-morawiecki-to-akt-sprawiedliwosci-dziejowej)
 - [ ] Ensure that downloaded COVID-19 data is cached, instead of redownloading it
 - [ ] Add other map options (vaccinatation rate per age group, single dose coverage etc.)
